@@ -34,11 +34,11 @@ class Streamer(StreamListener):
                     #Store Tweets into SQLite db
                     table = db["tweets"]
                     table.insert(dict(
-                        tweet_id = id_str,
-                        user = name,
-                        tweet_datetime = created,
-                        text = text,
-                        sentement_score = polarity,
+                        tweet_id=id_str,
+                        user=name,
+                        tweet_datetime=created,
+                        text=text,
+                        sentement_score=polarity,
                         coords = coords,
                         ))
                     print("Tweet Added", text)
